@@ -1,0 +1,139 @@
+{
+  "optical_block": {
+    "Nodes": [
+      {
+		"NodeId": 1,
+		"ParentId" : null,
+		"ChildIds" : [2],
+		"ElementId" : 1, 
+		"Type" : "Collimator",		
+		"Postiion" : [115,25]
+	  },
+	  {
+		"NodeId": 2,
+		"ParentId" : 1,
+		"ChildIds" : [3],
+		"ElementId" : 2,
+		"type" : "Mirror",
+		"Postiion" : [163.733,16.267]
+	  },
+	  {
+		"NodeId": 3,
+		"ParentId" : 2,
+		"ChildIds" : [4],
+		"ElementId" : 3,
+		"type" : "Polarized_beam_spliter",
+		"Postiion" : [155,65]
+	  },
+	  {
+		"NodeId": 4,
+		"ParentId" : 3,
+		"ChildIds" : [5],
+		"ElementId" : 4,
+		"type" : "Quarter_wave_plate",
+		"Postiion" : [137,65]
+	  },
+	  {
+		"NodeId": 5,
+		"ParentId" : 4,
+		"ChildIds" : [6],		
+		"ElementId" : 5,
+		"type" : "Rubidium_vapor_cell",
+		"Postiion" : [65,65]
+	  },
+	  {
+		"NodeId": 6,
+		"ParentId" : 5,
+		"ChildIds" : [7],
+		"ElementId" : 2,
+		"type" : "Mirror",
+		"Postiion" : [13.490,65]
+	  },
+	  {
+		"NodeId": 7,
+		"ParentId" : 6,
+		"ChildIds" : [8],
+		"ElementId" : 5,
+		"type" : "Rubidium_vapor_cell",
+		"Postiion" : [65,65]
+	  },
+	  {
+		"NodeId": 8,
+		"ParentId" : 7,
+		"ChildIds" : [9],
+		"ElementId" : 4,	
+		"type" : "Quarter_wave_plate",
+		"Postiion" : [137,65]
+	  },
+	  {
+		"NodeId": 9,
+		"ParentId" : 8,
+		"ChildIds" : [10],
+		"ElementId" : 3,
+		"type" : "Polarized_beam_spliter",
+		"Postiion" : [155,65]
+	  },
+	  {
+		"NodeId": 10,
+		"ParentId" : 9,
+		"ChildIds" : [11],
+		"type" : "Mirror",
+		"ElementId" : 2,
+		"Postiion" : [201.907,74.907]
+	  },
+	  {
+		"NodeId": 11,
+		"ParentId" : 10,
+		"ChildIds" : [12],
+		"ElementId" : 6,
+		"type" : "Lens",
+		"Postiion" : [192,42]
+	  },
+	  {
+		"NodeId": 12,
+		"ParentId" : 11,
+		"ChildIds" : null,		
+		"ElementId" : 7,
+		"type" : "photodiode",
+		"Postiion" : [192,27.5]
+	  }
+    ],
+  "Elements": [
+	{		
+		"ElementId": 1,
+		"Type": "Collimator",
+		"ModelNO": "Thorlabs_F280APC-780"	
+	},
+	{		
+		"ElementId": 2,
+		"Type": "Mirror",
+		"ModelNO": "Thorlabs_BB05-E02"	
+	},
+	{		
+		"ElementId": 3,
+		"Type": "Polarized_beam_spliter",
+		"ModelNO": "Thorlabs_BSH05/M"	
+	},
+	{		
+		"ElementId": 4,
+		"Type": "Quarter_wave_plate",
+		"ModelNO": "Thorlabs_WPQ05ME-780"	
+	},
+	{		
+		"ElementId": 5,
+		"Type": "Rubidium_vapor_cell",
+		"ModelNO": "Photonics_Technology_SC-RB-(25X50-P)"
+	},
+	{		
+		"ElementId": 6,
+		"Type": "Lens",
+		"ModelNO": "Thorlabs_LA1540-AB"	
+	},	
+	{		
+		"ElementId": 7,
+		"Type": "photodiode",
+		"ModelNO": "Thorlabs_SM05PD3A"		
+	}
+	]	
+  }
+}
